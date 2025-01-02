@@ -5,21 +5,21 @@
 class Cloudcrafter < Formula
   desc "CLI for multi-cloud provisioning and resource management"
   homepage "https://github.com/Omotolani98/cloudcrafter"
-  version "1.0.19"
+  version "1.0.20"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Omotolani98/cloudcrafter/releases/download/v1.0.19/cloudcrafter-darwin-amd64.tar.gz"
-      sha256 "ccb2e798468875c0309bdb491d1894583e048679ae752a615097b5831a09ca90"
+      url "https://github.com/Omotolani98/cloudcrafter/releases/download/v1.0.20/cloudcrafter-darwin-amd64.tar.gz"
+      sha256 "8dd5c0fdc84afd259cd18eb36201d8476958fa09bedea0f1f0c3985a39bcf0bb"
 
       def install
         bin.install "cloudcrafter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Omotolani98/cloudcrafter/releases/download/v1.0.19/cloudcrafter-darwin-arm64.tar.gz"
-      sha256 "ba808045e3a9725349ac44e090434d64ff2533d26ea67896209e7c4066b6c848"
+      url "https://github.com/Omotolani98/cloudcrafter/releases/download/v1.0.20/cloudcrafter-darwin-arm64.tar.gz"
+      sha256 "8861a262bdd80638dc360bc93df4f5e126e5d561aa99f61a5272a17595d1a815"
 
       def install
         bin.install "cloudcrafter"
@@ -30,8 +30,8 @@ class Cloudcrafter < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Omotolani98/cloudcrafter/releases/download/v1.0.19/cloudcrafter-linux-amd64.tar.gz"
-        sha256 "ea01eb03658f342df85ca80a61175108fdb740ae74331bfcb675904e53bfe28f"
+        url "https://github.com/Omotolani98/cloudcrafter/releases/download/v1.0.20/cloudcrafter-linux-amd64.tar.gz"
+        sha256 "35a1125fbc3c4d123dc30aaaceb3bd3286e782a7093d6e4735c8db1a7da2a188"
 
         def install
           bin.install "cloudcrafter"
@@ -40,8 +40,8 @@ class Cloudcrafter < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Omotolani98/cloudcrafter/releases/download/v1.0.19/cloudcrafter-linux-arm64.tar.gz"
-        sha256 "9cccb4fc66af05e435c161b28413489cb1b20b1d773676c3a8f7a43ac7f3196f"
+        url "https://github.com/Omotolani98/cloudcrafter/releases/download/v1.0.20/cloudcrafter-linux-arm64.tar.gz"
+        sha256 "50f1c308ae25bf9d25e5294240dd699bd550a7064da12dd553c37550fdba6e55"
 
         def install
           bin.install "cloudcrafter"
